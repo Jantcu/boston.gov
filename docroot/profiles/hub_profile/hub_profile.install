@@ -415,7 +415,7 @@ function hub_profile_update_7020() {
  */
 function hub_profile_update_7021() {
   $enabled_modules = array(
-    'migrate_orphans',
+    'bos_migrate_purge',
   );
   module_enable($enabled_modules);
 }
