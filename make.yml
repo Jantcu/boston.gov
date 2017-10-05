@@ -181,18 +181,8 @@ projects:
     version: 1.4
   migrate:
     version: 2.8
-    patch:
-      # Issue link https://www.drupal.org/node/2829099
-      # Exposes listClass() method needed for migrate_orphans
-      - https://www.drupal.org/files/issues/migrate-migratesourcelist_listclass_public-2829099-2.patch
   migrate_extras:
     version: 2.5
-  migrate_orphans:
-    type: module
-    download:
-      type: git
-      branch: "7.x-1.x"
-      url: https://git.drupal.org/sandbox/GeduR/2873105.git
   menu_block:
     version: 2.7
   office_hours:
