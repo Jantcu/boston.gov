@@ -8,11 +8,11 @@
 /**
  * Implements hook_drush_command().
  *
- * Adds drush command: bos-migrate-purge.
+ * Adds drush command: hub-migrate-purge.
  */
-function bos_migrate_purge_drush_command() {
+function hub_migrate_purge_drush_command() {
   return array(
-    'bos-migrate-purge' => array(
+    'hub-migrate-purge' => array(
       'description' => 'Check remote source for orphaned records (removed) and remove them locally',
       'arguments' => array(
         'migration-name' => 'Name of the migration to check',
@@ -26,9 +26,9 @@ function bos_migrate_purge_drush_command() {
 }
 
 /**
- * Callback for bos-migrate-purge command.
+ * Callback for hub-migrate-purge command.
  */
-function drush_bos_migrate_purge($migration_name) {
+function drush_hub_migrate_purge($migration_name) {
 
   // https://www.drupal.org/node/1416672
   /** @var Migration $migration */
